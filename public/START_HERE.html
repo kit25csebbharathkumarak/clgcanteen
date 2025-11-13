@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here - Canteen Bill Generator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        a {
+            display: block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        a:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .info h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Canteen Bill Generator</h1>
+        <p>Welcome! Choose where you want to go:</p>
+        
+        <div class="links">
+            <a href="index.html">Owner Dashboard</a>
+            <a href="customer.html">Customer Menu</a>
+            <a href="orders.html">Orders Management</a>
+        </div>
+
+        <div class="info">
+            <h3>Quick Start Guide</h3>
+            <ul>
+                <li><strong>Owner Dashboard:</strong> Manage menu items, prices, and generate QR codes</li>
+                <li><strong>Customer Menu:</strong> Browse menu and place prebooking orders</li>
+                <li><strong>Orders Management:</strong> View orders, update status, and generate bills</li>
+            </ul>
+            <p><strong>Note:</strong> All data is stored in your browser's localStorage. No server required!</p>
+        </div>
+    </div>
+</body>
+</html>
+

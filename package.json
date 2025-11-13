@@ -1,0 +1,18 @@
+{
+  "name": "canteen-bill-generator",
+  "version": "1.0.0",
+  "description": "Canteen management system with bill generation and QR code prebooking",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["canteen", "bill", "qr-code", "prebooking"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "qrcode": "^1.5.3",
+    "body-parser": "^1.20.2"
+  }
+}
+

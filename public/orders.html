@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Orders Management</h1>
+            <nav>
+                <a href="index.html" class="nav-link">Menu Management</a>
+                <a href="orders.html" class="nav-link active">Orders</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <label for="statusFilter">Filter by Status:</label>
+                <select id="statusFilter">
+                    <option value="all">All Orders</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </section>
+
+            <!-- Orders List -->
+            <section class="orders-section">
+                <h2>Orders</h2>
+                <div id="ordersList" class="orders-list">
+                    <!-- Orders will be loaded here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="data-manager.js"></script>
+    <script src="orders.js"></script>
+</body>
+</html>
+

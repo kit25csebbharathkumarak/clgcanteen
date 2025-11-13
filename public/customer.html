@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Menu - Prebook Your Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ Canteen Menu</h1>
+            <p>Prebook your food items</p>
+        </header>
+
+        <main>
+            <!-- Customer Name Input -->
+            <section class="customer-section">
+                <div class="form-group">
+                    <label for="customerName">Your Name (Optional):</label>
+                    <input type="text" id="customerName" placeholder="Enter your name">
+                </div>
+            </section>
+
+            <!-- Menu Display -->
+            <section class="menu-section">
+                <h2>Available Items</h2>
+                <div id="menuList" class="menu-list">
+                    <!-- Menu items will be loaded here -->
+                </div>
+            </section>
+
+            <!-- Cart Section -->
+            <section class="cart-section">
+                <h2>Your Order</h2>
+                <div id="cartItems" class="cart-items">
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: ₹<span id="cartTotal">0.00</span></strong>
+                </div>
+                <button id="submitOrderBtn" class="btn btn-primary" disabled>Submit Prebooking</button>
+            </section>
+
+            <!-- Order Confirmation Modal -->
+            <div id="orderModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Order Confirmed!</h2>
+                    <div id="orderDetails"></div>
+                    <p class="order-number">Order #<span id="orderNumber"></span></p>
+                    <p class="order-message">Your order has been placed successfully. Please show this order number at the counter.</p>
+                    <button id="newOrderBtn" class="btn btn-primary">Place New Order</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data-manager.js"></script>
+    <script src="customer.js"></script>
+</body>
+</html>
+
